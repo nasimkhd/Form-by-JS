@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyForm</title>
+  </head>
+  <body>
+    <h2>Week 5 Demo - The First Form</h2>
+    <form  method="post" action="/my-form" >
+      <table style="border: 1px dashed #cdcdcd; padding: 6px">
+        <tbody>
+          <tr>
+            <td>
+              <label for="username">Username:</label>
+            </td>
+            <td>
+              <input
+                style="width: 100%"
+                id="username"
+                type="text"
+                placeholder="Username "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                style="width: 100%"
+                id="email"
+                type="text"
+                placeholder="Email address"
+              />
+              <tr>
+                <td><label for="name">Name:</label></td>
+                <td>
+                  <input
+                    style="width: 100%"
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="password">Password:</label></td>
+                <td>
+                  <input
+                    style="width: 100%"
+                    id="password"
+                    type="password"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="passwordconfirm">Confirm Password:</label></td>
+                <td>
+                  <input
+                    style="width: 100%"
+                    id="passwordconfirm"
+                    type="password"
+                    required
+                    autocomplete="on"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="PIN">PIN:</label></td>
+                <td>
+                  <input
+                    style="width: 100%"
+                    id="PIN"
+                    type="password"
+                    inputmode="numeric"
+                    maxlength="8"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <p>
+                    <em
+                      >Would you like to subscribe to our monthly
+                      newsletter?</em
+                    ><br />
+                    <input
+                      id="yes"
+                      type="radio"
+                      name="newsletter"
+                      value="yes"
+                    /><label for="yes">Yes</label><br />
+                    <input
+                      id="no"
+                      type="radio"
+                      name="newsletter"
+                      value="no"
+                    /><label for="no">No</label>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="submit" value="Submit"/> (using a regular input
+                  element to submit)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button type="submit">Submit</button> (using a button element
+                  to submit)
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
